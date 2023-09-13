@@ -35,8 +35,10 @@ const router = createBrowserRouter([
 //children - atributo de App que vai armazenar um array (coleção de obejtos, como uma lista) os objetos de todas as páginas que podem ser acessadas. 
 //path - define a URI da página após o endereço do projeto no browser.
 //element - define o componente que vai ser chamado quando a URI for chamada no browser 
+
+//RouterProvider - Controla a renderização das páginas no ReactDom.
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}/>
   </React.StrictMode>,
 )
